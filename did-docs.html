@@ -195,7 +195,7 @@
           "publicKeyBase58": "Mv6gmMNam3uVAjH3C2AVvLZZn6z3wXmqPVpfkcJCwDwn"
         }
     ],
-    "authorization": { "profiles": [ {"key": "#Mv6gmMNa", "roles", ["edge"]} ] }
+    "authorization": { "profiles": [ {"key": "#Mv6gmMNa", "roles": ["edge"]} ] }
 }
         </pre>
 
@@ -289,7 +289,7 @@
         }
     ],
     "authentication": [ "#Mv6gmMNa" ],
-    "authorization": { "profiles": [ {"key": "#Mv6gmMNa", "roles", ["edge"]} ] }
+    "authorization": { "profiles": [ {"key": "#Mv6gmMNa", "roles": ["edge"]} ] }
 }
         </pre>
         <p class="note">Adding or deleting a key with authentication privileges can only be authorized by a key that
@@ -324,12 +324,12 @@
     </p>
 
     <pre class="example" title="An authorization section">
-“authorization”: {
+"authorization": {
     "profiles": [
-        {"key": "#Mv6gmMNa", "roles", ["edge"]},              // an "edge" key
-        {"key": "#izfrNTmQ", "roles", ["edge", "biometric"]}, // an "edge" and a "biometric" key
-        {"key": "#02b97c30", "roles", ["cloud"]},             // a "cloud" key
-        {"key": "#H3C2AVvL", "roles", ["offline"]},           // an "offline" key
+        {"key": "#Mv6gmMNa", "roles": ["edge"]},              // an "edge" key
+        {"key": "#izfrNTmQ", "roles": ["edge", "biometric"]}, // an "edge" and a "biometric" key
+        {"key": "#02b97c30", "roles": ["cloud"]},             // a "cloud" key
+        {"key": "#H3C2AVvL", "roles": ["offline"]},           // an "offline" key
     ],
     "rules": [
         {
